@@ -1,0 +1,29 @@
+═══════════════════════════════════════════════════════════════
+                    RECURSION NOTES
+═══════════════════════════════════════════════════════════════
+
+1. WHAT IS RECURSION?
+   - A function that calls itself to solve smaller instances of the same problem
+   - Must have a BASE CASE to stop recursion (prevents infinite loops/StackOverflowError)
+   - Must have a RECURSIVE CASE that moves toward the base case
+
+───────────────────────────────────────────────────────────────
+
+2. KEY COMPONENTS OF RECURSION:
+
+   a) Base Case: Condition that stops recursion
+      Example: if(n == 0) return;
+
+   b) Recursive Case: Function calls itself with modified parameters
+      Example: printNumbersInDecreasing(n - 1);
+
+   c) Progress: Each recursive call must move closer to base case
+
+───────────────────────────────────────────────────────────────
+
+3. PROCESSING IN RECURSION:
+
+   a) PRE-ORDER (Processing BEFORE recursive call):
+      - Print/Process current value THEN recurse
+      - Example: PrintNumbers.printNumbersInDecreasing(10)
+      - Output: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
