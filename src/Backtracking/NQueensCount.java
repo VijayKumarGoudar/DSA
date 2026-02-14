@@ -8,14 +8,6 @@ public class NQueensCount {
         if (b.length == i) {
             // print the board and count ways
             count++;
-            for (int k = 0; k < b.length; k++) {
-                for(int l = 0; l < b.length; l++) {
-                    System.out.print(b[k][l] + " ");
-                }
-                System.out.println();
-            }
-
-            System.out.println();
             return true;
         }
 

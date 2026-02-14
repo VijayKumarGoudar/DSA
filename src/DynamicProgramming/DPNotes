@@ -1,0 +1,39 @@
+Dynamic Programming (DP)
+
+1.  What is Dynamic Programming? Dynamic Programming is an optimization
+    technique used to solve problems that have:
+
+-   Optimal Substructure
+-   Overlapping Subproblems
+
+DP = Recursion + Caching (Memoization or Tabulation)
+
+2.  3 Core Steps to Solve a DP Problem
+
+Step 1: Form a State (Define Subproblem) State represents the parameters
+that uniquely define a subproblem.
+
+Examples: - Fibonacci: dp[n]
+          - Grid paths: dp[i][j]
+
+Step 2: Optimal Substructure (Recurrence Relation) Express the solution
+of a problem using smaller subproblems.
+
+Example (Fibonacci): f(n) = f(n-1) + f(n-2)
+Example (House Robber): dp[i] = max(dp[i-1], dp[i-2] + nums[i])
+
+Step 3: Overlapping Subproblems (Optimization) Same subproblems are
+solved multiple times in recursion. We store results to avoid
+recomputation.
+Two ways:
+1. Memoization (Top-Down) - Recursion + Cache - Store results
+in array/map
+
+2.  Tabulation (Bottom-Up)
+    -   Iterative DP table
+    -   Solve from base cases to final answer
+
+
+Step 4:
+Base Case Smallest known values that stop recursion.
+Example (Fibonacci): dp[0] = 0 dp[1] = 1
